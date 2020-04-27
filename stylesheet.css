@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  padding: 0 px;
+  margin: 0 auto;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(35, 31, 32, 0.9);
+  line-height: 65px;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.header-left {
+  float: left;
+}
+.header-left h4 {
+  float: left;
+  font-size: 20px;
+  padding-left: 20px;
+  margin-right: 1000px;
+}
+
+.header-right {
+  float: right;
+  margin-left: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 1s;
+}
+.header-right:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+}
+
+.top-wrapper {
+  width: 100%;
+  padding: 180px 0px 100px 0px;
+  background-image: url(https://imagizer.imageshack.com/img922/8089/jd83mK.jpg);
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+.top-wrapper h1 {
+  font-weight: Bold;
+  font-size: 90px;
+  color: #fff;
+  animation-name: moveToRight;
+  animation-duration: 2s;
+}
+
+.top-wrapper h2 {
+  font-size: 60px;
+  color: #eee;
+  animation-name: moveToLeft;
+  animation-duration: 2s;
+}
+
+.btn-wrapper button {
+  width: 180px;
+  padding: 12px;
+  margin: 20px;
+  border: 2px solid #eee;
+  border-radius: 50px;
+  font-size: : 18px;
+  outline: none;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.btn-left {
+  background-color: #eee;
+  color: #444;
+  animation-name: animateBtn;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: backwards;
+}
+
+.btn-right {
+  background-color: transparent;
+  color: #eee;
+  animation-name: animateBtn;
+  animation-duration: 1s;
+  animation-delay: 2.3s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveToLeft {
+  0% {
+    transform: translateX(120px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes moveToRight {
+  0% {
+    transform: translateX(-120px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes animateBtn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.lesson-wrapper {
+  width: 100%;
+  height: 500px;
+  padding-bottom: 80px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.lesson {
+  float: left;
+  width: 20%;
+}
+
+.lesson img {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 100px;
+  display: inline-block;
+  border: 5px solid #fff;
+  cursor: pointer;
+  transition-duration: 1s;
+  filter: grayscale(100%);
+  transition: .2s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.lesson:hover img {
+  filter:grayscale(0%);
+  transform: scale(1.1) rotate(-1deg);
+}
+.heading {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 60px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  color: #5f5d60;
+}
+
+.txt-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #b3aeb5;
+  text-align: justify;
+}
+
+.lesson-text {
+  padding-top: 10px;
+}
+
+.message-wrapper {
+  height: 500px;
+  width: 100%;
+  padding-bottom: 80px;
+  text-align: left;
+  color: white;
+  background-color: #414042;
+  position: relative;
+}
+
+.message-wrapper img {
+  max-height: 400px;
+  position: absolute;
+  top: 100px;
+  left: 550px;
+}
+
+
+.message-wrapper h3 {
+  font-size: 30px;
+  padding-top: 250px;
+  padding-left: 80px;
+  padding-bottom: 20px;
+}
+
+.message-wrapper p {
+  width: 300px;
+  font-size: 12px;
+  padding-left: 80px;
+  padding-bottom: 80px;
+}
+
+.quote-wrapper {
+  height: 200px;
+  width: 100%;
+  text-align: center;
+  color: #414042;
+  background-color: #f2f2f2;
+}
+
+.quote-wrapper h3 {
+  margin: 0 auto;
+  padding-top: 45px;
+}
+
+.quote-wrapper p {
+ float: right;
+ padding-right: 250px;
+}
+
+footer {
+  background-color: #231f20;
+  height: 100px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+footer h4 {
+  padding-left: 50px;
+  float:left;
+}
+
+.footer-list {
+  float: right;
+}
+
+.footer-list li {
+  padding-right: 50px;
+  padding-bottom: 10px;
+  font-size: 12px;
+  list-style: none;
+  align: right;
+}
